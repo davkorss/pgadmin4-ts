@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  pgadmin4:
+    image: "dpage/pgadmin4"
+    restart: always
+    ports:
+      - "5050:80"
+    environment:
+      - "PGADMIN_DEFAULT_EMAIL=guest@guest.com"
+      - "PGADMIN_DEFAULT_PASSWORD=guest"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "2m"
+        max-file: "10"
+    networks:
+      - postgres-local
+networks:
+  postgres-local:
+    name: postgres-local
