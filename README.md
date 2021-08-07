@@ -3,7 +3,7 @@ pgAdmin 4 Tiny Service
 
 ## Usage
 
-- Remeber to add the ``postgres-local`` docker network to your PostgreSQL services
+- Remember to add the ``postgres-local`` docker network to your PostgreSQL services
 ```
 version: "3.9"
 services:
