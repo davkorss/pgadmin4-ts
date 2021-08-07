@@ -22,5 +22,5 @@ git clone https://github.com/davkorss/pgadmin4-ts.git
 cd pgadmin4-ts
 docker-compose up -d --build
 ```
-- Open http://localhost:5000 in your browser
+- Open http://localhost:5050 in your browser
 - **username:** ``guest@guest.com`` **password:** ``guest``
